@@ -11,7 +11,7 @@
     "declaration": false,
     "sourceMap": false,
     "inlineSourceMap": true,
-    "outDir": "public",
+    "outDir": "./public",
     "rootDir": "./",
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,

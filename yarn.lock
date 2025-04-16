@@ -5775,7 +5775,7 @@ autoprefixer@^10.4.16:
     picocolors "^1.0.1"
     postcss-value-parser "^4.2.0"
 
-awilix@^8.0.1:
+awilix@^8.0.0, awilix@^8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/awilix/-/awilix-8.0.1.tgz#4f4704038cc5df3f8f2b9254031af79d4d3708bb"
   integrity sha512-zDSp4R204scvQIDb2GMoWigzXemn0+3AKKIAt543T9v2h7lmoypvkmcx1W/Jet/nm27R1N1AsqrsYVviAR9KrA==
@@ -6331,6 +6331,21 @@ clone@^1.0.2:
   resolved "https://registry.yarnpkg.com/clone/-/clone-1.0.4.tgz#da309cc263df15994c688ca902179ca3c7cd7c7e"
   integrity sha512-JQHZ2QMW6l3aH/j6xCqQThY/9OH4D/9ls34cgkUBiEeocRTU04tHfKPBsUK1PqZCUQM7GiA0IIXJSuXHI64Kbg==
 
+cloudinary-core@^2.13.0:
+  version "2.13.1"
+  resolved "https://registry.npmjs.org/cloudinary-core/-/cloudinary-core-2.13.1.tgz#7abb62bf1db41773acfe1eebb7fd40571c34495b"
+  integrity sha512-z53GPNWnvU0Zi+ns8CIVbZBfj7ps/++zDvwIyiFuq5p1MoK+KUCg0k5mBceDDHTnx1gHmHUd9aohS+gDxPNt6w==
+
+cloudinary@^1.27.1:
+  version "1.41.3"
+  resolved "https://registry.npmjs.org/cloudinary/-/cloudinary-1.41.3.tgz#dc96725122099349adba6ab4eccda84fa13e8c2e"
+  integrity sha512-4o84y+E7dbif3lMns+p3UW6w6hLHEifbX/7zBJvaih1E9QNMZITENQ14GPYJC4JmhygYXsuuBb9bRA3xWEoOfg==
+  dependencies:
+    cloudinary-core "^2.13.0"
+    core-js "^3.30.1"
+    lodash "^4.17.21"
+    q "^1.5.1"
+
 clsx@2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/clsx/-/clsx-2.0.0.tgz#12658f3fd98fafe62075595a5c30e43d18f3d00b"
@@ -6568,6 +6583,11 @@ copy-to-clipboard@^3.3.3:
   integrity sha512-2KV8NhB5JqC3ky0r9PMCAZKbUHSwtEo4CwCs0KXgruG43gX5PMqDEBbVU4OUzw2MuAWUfsuFmWvEKG5QRfSnJA==
   dependencies:
     toggle-selection "^1.0.6"
+
+core-js@^3.30.1:
+  version "3.41.0"
+  resolved "https://registry.npmjs.org/core-js/-/core-js-3.41.0.tgz#57714dafb8c751a6095d028a7428f1fb5834a776"
+  integrity sha512-SJ4/EHwS36QMJd6h/Rg+GyR4A5xE0FSI3eZ+iBVpfqf1x0eTSg1smWLHrA+2jQThZSh97fmSgFSU8B61nxosxA==
 
 core-util-is@~1.0.0:
   version "1.0.3"
@@ -8624,6 +8644,21 @@ media-typer@0.3.0:
   resolved "https://registry.yarnpkg.com/media-typer/-/media-typer-0.3.0.tgz#8710d7af0aa626f8fffa1ce00168545263255748"
   integrity sha512-dq+qelQ9akHpcOl/gUVRTxVIOkAJ1wR3QAvb4RsVjS8oVoFjDGTc679wJYmUmknUF5HwMLOgb5O+a3KxfWapPQ==
 
+medusa-core-utils@^1.1.30:
+  version "1.2.3"
+  resolved "https://registry.npmjs.org/medusa-core-utils/-/medusa-core-utils-1.2.3.tgz#d6f327c771868122721c470d2f5be3551bdf6f6e"
+  integrity sha512-mNUqWh8G7BF9dcxt3t22GtSJrm4pfpU98QzvNgpqAvirVbBI4lOCpDQGoKE+jMHOLQJHrLQFoSJeqcofDJvEgA==
+  dependencies:
+    awilix "^8.0.0"
+
+medusa-file-cloudinary@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.npmjs.org/medusa-file-cloudinary/-/medusa-file-cloudinary-1.0.2.tgz#b790d8e94b335352d6c0d1ae8b1a2259766c0de1"
+  integrity sha512-FTdRrCtfsbQjtdBnD3xbXjR42mI+rlnHtbayJZNHh+3wbF4jObCxHFM5sTJBgbVVRdkVp7frL6irwpqoQ67hOQ==
+  dependencies:
+    cloudinary "^1.27.1"
+    medusa-core-utils "^1.1.30"
+
 merge-descriptors@1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/merge-descriptors/-/merge-descriptors-1.0.3.tgz#d80319a65f3c7935351e5cfdac8f9318504dbed5"
@@ -9441,6 +9476,11 @@ pure-rand@^6.0.0:
   version "6.1.0"
   resolved "https://registry.yarnpkg.com/pure-rand/-/pure-rand-6.1.0.tgz#d173cf23258231976ccbdb05247c9787957604f2"
   integrity sha512-bVWawvoZoBYpp6yIoQtQXHZjmz35RSVHnUOTefl8Vcjr8snTPY1wnpSPMWekcFwbxI6gtmT7rSYPFvz71ldiOA==
+
+q@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.npmjs.org/q/-/q-1.5.1.tgz#7e32f75b41381291d04611f1bf14109ac00651d7"
+  integrity sha512-kV/CThkXo6xyFEZUugw/+pIOywXcDbFYgSct5cT3gqlbkBE1SJdwy6UQoZvodiWF/ckQLZyDE/Bu1M6gVu5lVw==
 
 qs@6.13.0:
   version "6.13.0"
